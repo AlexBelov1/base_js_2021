@@ -11,16 +11,16 @@ console.log(typeof hasChildren);
 let userProffesion = null;
 console.log(userProffesion);
 console.log(typeof userProffesion);
-let userLogin
+let userLogin;
 console.log(userLogin);
 console.log(typeof userLogin);
 let userFull = {
-    name: "Alex", 
-    sex: "male"
+  name: "Alex",
+  sex: "male",
 };
 console.log(userFull);
 console.log(typeof userFull);
-const symbol = Symbol("Dragon")
+const symbol = Symbol("Dragon");
 console.log(symbol);
 console.log(typeof symbol);
 let viewShapeCount = 100200030010012087564544n;
