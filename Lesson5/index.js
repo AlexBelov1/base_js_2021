@@ -231,7 +231,7 @@
 
 // let getPalin = (str) => {
 //   let len = str.lenght;
-//   for (let i = 0; i < len; i += 1) {
+//   for (let i = 0; i <= len/2; i += 1) {
 //     if (str[i] === str[len - i]) {
 //       console.log("true");
 //     } else {
@@ -240,3 +240,18 @@
 //   }
 // };
 // getPalin("ШАЛАШ");
+
+//
+// const isPalindrom = (str) => {
+//   let newStr = "";
+//   for (let i = 0; i < str.length; i += 1) {
+//     newStr += str[str.length-i-1];
+//   }
+//   if (newStr===str){
+//       return  true
+//   }else{
+//           return false
+//         }
+//       }
+// };
+// console.log(isPalindrom('asddf'));
