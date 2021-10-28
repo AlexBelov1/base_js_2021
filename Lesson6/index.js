@@ -113,5 +113,5 @@
 //   } else {
 //     return str;
 //   }
-};
+// };
 // console.log(customReplaceAll("hi is  you, hi its me", "hi", "Hello"));
