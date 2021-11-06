@@ -164,3 +164,106 @@
 
 // // console.log(isArr(arr1, arr2));
 // console.log(isEqualArr(arr1, arr2));
+
+// const obj1 = { a: "Hello" };
+// const obj2 = Object.assign({}, obj1);
+// console.log(obj1, obj2);
+// obj1.a = "Goodbye";
+// console.log(obj1, obj2);
+
+// const obj1 = {
+//   a: "Hello",
+//   user: { name: "Alex", age: { date: "28", year: "1996", month: "03" } },
+// };
+
+// // const obj2 = Object.assign({}, obj1);
+// // console.log(JSON.stringify(obj1));
+// const obj2 = JSON.parse(JSON.stringify(obj1));
+// console.log(obj1.user, obj2.user);
+
+// obj1.user.age.year = "2021";
+// console.log(obj1.user, obj2.user);
+
+// const arr1 = [1, 2, 3, 4];
+
+// const arr2 = [7, 8, 9];
+
+// const arr3 = [...arr1, 5, 6, ...arr2];
+// console.log(arr3);
+
+// const obj1 = { name: "ALex", age: "25" };
+// const obj2 = { ...obj1, key: "user1" };
+// console.log(obj1, obj2);
+// obj1.name = "Ivan";
+// console.log(obj1, obj2);
+
+// const getSum = (type, ...args) => {
+//   if (type === "sum") {
+//     //сумма
+//     console.log(Array.isArray(args), "sum");
+//   } else {
+//     //вычитание
+//     console.log(args, "negative");
+//   }
+// };
+// getSum("sum", 1, 2, 3, 4);
+//функция которая первым аргументом принимает действие(сумма,вычитание),после принимает параметры для функции
+// const arr = [1, 2, 3, 4];
+// for (let elem of arr) {
+//   console.log(elem + elem);
+//   //   console.log(elem);
+// }
+
+// const obj = { a: 1, b: 2 };
+// for (let elem in obj) {
+//   console.log(elem);
+// }
+
+// const obj1 = { name: "Alex", age: "26" };
+// const objObj = Object.assign({}, obj1);
+// const objSpread = { ...obj1 };
+
+// console.log(obj1, objObj, objSpread);
+// objObj.name = "Max";
+// objSpread.name = "Ivan";
+// console.log(obj1, objObj, objSpread);
+
+// const getSum = (...arg) => {
+//   let sum = 0;
+//   for (let cur of arg) {
+//     if (cur % 2 === 0) {
+//       sum += cur;
+//     }
+//   }
+//   console.log(sum);
+// };
+// getSum(1, 2, 3, 4);
+
+// const arr1 = [1, 2, 4, 6, 7, 3];
+// const arr2 = [1, 2, 4, 5, 3];
+// const getIdent = () => {
+//   for (let el1 of arr1) {
+//     for (let el2 of arr2) {
+//       if (el1 === el2) {
+//         console.log(el1);
+//       }
+//     }
+//   }
+// };
+// getIdent(arr1, arr2);
+
+// const getIdent = (arr1, arr2) => {
+//   for (let el1 of arr1) {
+//     for (let el2 of arr2) {
+//       if (el1 === el2) {
+//         console.log(el1);
+//       }
+//     }
+//   }
+// };
+// getIdent([1, 2, 4], [1, 3, 1]);
+//тут надо добавить пуш в массив и сравнивать, не добавлен ли уже в массив
+// const getIdent = (arr1, arr2) => {
+//   return arr1.filter((el) => arr2.includes(el));
+// };
+// console.log(getIdent([1, 2, 4], [1, 3, 1]));
